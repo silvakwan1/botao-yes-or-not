@@ -5,10 +5,8 @@ btn.addEventListener("touchstart", mudei);
 btn.addEventListener("click", mudei);
 
 function mudei() {
-  const width = window.innerWidth;
+  const width = window.innerWidth - 200;
   const height = window.innerHeight - 200;
-
-  console.log(width);
 
   const maxY = Math.random() * height;
   const maxX = Math.random() * width;
