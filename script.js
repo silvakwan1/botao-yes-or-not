@@ -2,6 +2,7 @@ const btn = document.querySelector(".btn2");
 
 btn.addEventListener("mouseenter", mudei);
 btn.addEventListener("touchstart", mudei);
+btn.addEventListener("click", mudei);
 
 function mudei() {
   const width = window.innerWidth;
