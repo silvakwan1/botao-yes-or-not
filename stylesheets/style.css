@@ -22,8 +22,8 @@ body {
   width: 800px;
   background-color: #fff;
   padding: 20px;
-
   border-radius: 20px;
+  text-align: center;
 
   display: flex;
   flex-direction: column;
@@ -53,6 +53,7 @@ body {
 }
 
 .botoes button {
+  color: #fff;
   padding: 10px 25px;
   border-radius: 10px;
   border: purple solid 2px;
@@ -63,7 +64,7 @@ body {
 
 @media (max-width: 500px) {
   .content img {
-    height: 35%;
+    width: 100%;
   }
 
   .text p {
