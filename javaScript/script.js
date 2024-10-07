@@ -15,7 +15,7 @@ const titlee = document.querySelector("#title");
   }
   try {
     const response = await fetch(
-      `https://escape-button-api-silvakwan1s-projects.vercel.app/getdate/${id}`
+      `https://escape-button-api-v1.vercel.app/getdate/${id}`
     );
 
     if (!response.ok) {

@@ -11,7 +11,7 @@ document
 
     try {
       const response = await fetch(
-        "https://escape-button-api-silvakwan1s-projects.vercel.app/craeteDataEscape",
+        "https://escape-button-api-v1.vercel.app/craeteDataEscape",
         {
           method: "POST",
           headers: {
