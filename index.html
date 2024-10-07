@@ -1,32 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>aceita</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Aceita Formulário</title>
+    <link rel="stylesheet" href="./stylesheets/form.css" />
+    <link
+      rel="icon"
+      href="./img/icons8-question-mark-doodle-16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="./img/icons8-question-mark-doodle-32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="./img/icons8-question-mark-doodle-96.png"
+      sizes="96x96"
+      type="image/png"
+    />
   </head>
   <body>
-    <div class="content">
-      <!-- <img
-        src="https://media.tenor.com/rlvsujbkhtsAAAAC/milk-and-mocha-bear-couple.gif"
-        alt=""
-      /> -->
-      <img
-        src="https://media.tenor.com/pGBE8W0bk5oAAAAC/searching-lost.gif"
-        alt=""
-      />
-      <div class="text">
-        <p>To com soldade!</p>
-        <h1>Volta a falar cmg?</h1>
-      </div>
-      <div class="botoes">
-        <a href="https://www.youtube.com/shorts/3iXpRM0T_Ew">
-          <button>sim</button></a
-        >
-        <button class="btn2">não</button>
-      </div>
+    <div class="container">
+      <h1>Gerador de pagina de sim e não</h1>
+      <form id="dataForm">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="text">Texto:</label>
+        <textarea id="text" name="text" rows="4" required></textarea>
+
+        <label for="lestUrl">URL de trasferencia:</label>
+        <input type="text" id="lestUrl" name="lestUrl" required />
+
+        <label for="imgUrl">URL da Imagem:</label>
+        <input type="text" id="imgUrl" name="imgUrl" required />
+
+        <input type="submit" value="Enviar Dados" />
+      </form>
     </div>
-    <script src="script.js"></script>
+    <div id="result"></div>
+
+    <script src="./javaScript/form.js"></script>
   </body>
 </html>
